@@ -1,0 +1,50 @@
+Matrix-vector product (c[m] = a[m, n] * b[n]; m = 15000, n = 15000)
+Memory used: 1716 MiB
+Elapsed time (serial): 0.585079 sec.
+
+Matrix-vector product (c[m] = a[m, n] * b[n]; m = 15000, n = 15000)
+Memory used: 1716 MiB
+Elapsed time (parallel): 0.289503 sec.
+Matrix-vector product (c[m] = a[m, n] * b[n]; m = 15000, n = 15000)
+Memory used: 1716 MiB
+Elapsed time (parallel): 0.149546 sec.
+Matrix-vector product (c[m] = a[m, n] * b[n]; m = 15000, n = 15000)
+Memory used: 1716 MiB
+Elapsed time (parallel): 0.102361 sec.
+Matrix-vector product (c[m] = a[m, n] * b[n]; m = 15000, n = 15000)
+Memory used: 1716 MiB
+Elapsed time (parallel): 0.114960 sec.
+
+Matrix-vector product (c[m] = a[m, n] * b[n]; m = 20000, n = 20000)
+Memory used: 3052 MiB
+Elapsed time (serial): 1.042457 sec.
+
+Matrix-vector product (c[m] = a[m, n] * b[n]; m = 20000, n = 20000)
+Memory used: 3052 MiB
+Elapsed time (parallel): 0.518258 sec.
+Matrix-vector product (c[m] = a[m, n] * b[n]; m = 20000, n = 20000)
+Memory used: 3052 MiB
+Elapsed time (parallel): 0.266609 sec.
+Matrix-vector product (c[m] = a[m, n] * b[n]; m = 20000, n = 20000)
+Memory used: 3052 MiB
+Elapsed time (parallel): 0.181206 sec.
+Matrix-vector product (c[m] = a[m, n] * b[n]; m = 20000, n = 20000)
+Memory used: 3052 MiB
+Elapsed time (parallel): 0.206478 sec.
+
+Matrix-vector product (c[m] = a[m, n] * b[n]; m = 25000, n = 25000)
+Memory used: 4768 MiB
+Elapsed time (serial): 1.631146 sec.
+
+Matrix-vector product (c[m] = a[m, n] * b[n]; m = 25000, n = 25000)
+Memory used: 4768 MiB
+Elapsed time (parallel): 0.809771 sec.
+Matrix-vector product (c[m] = a[m, n] * b[n]; m = 25000, n = 25000)
+Memory used: 4768 MiB
+Elapsed time (parallel): 0.417479 sec.
+Matrix-vector product (c[m] = a[m, n] * b[n]; m = 25000, n = 25000)
+Memory used: 4768 MiB
+Elapsed time (parallel): 0.280213 sec.
+Matrix-vector product (c[m] = a[m, n] * b[n]; m = 25000, n = 25000)
+Memory used: 4768 MiB
+Elapsed time (parallel): 0.319795 sec.
