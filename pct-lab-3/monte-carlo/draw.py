@@ -35,7 +35,7 @@ def draw(filenames, labels):
         #ax.plot(x,y,'-o',markersize=1,c="green")
         ax.plot(x,y,'-o',markersize=1,linewidth=0.5,label=datalabel)
         #x.bar(x, y);
-    ax.plot(range(2,7),range(2,7),'-',c="blue",linewidth=0.5,label="Linear speedup")
+    ax.plot(range(2,7),range(2,7),'-',c="blue",linewidth=0.5,label="Линейное ускорение")
 
     plt.tight_layout()
     ax.legend()

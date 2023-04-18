@@ -18,3 +18,13 @@ p = 8
 Numerical integration: [-1.000000, 1.000000], n0 = 100000000, EPS = 0.000010
 Result f(x): 1.499714002489; Runge rule: EPS 1.000000e-05, n = 200000000
 Elapsed time (sec.): 1.365794
+
+p = 3
+Numerical integration: [-1.000000, 1.000000], n0 = 100000000, EPS = 0.000010
+Result f(x): 1.499714002489; Runge rule: EPS 1.000000e-05, n = 200000000
+Elapsed time (sec.): 2.537752
+p = 5
+Numerical integration: [-1.000000, 1.000000], n0 = 100000000, EPS = 0.000010
+Result f(x): 1.499714002489; Runge rule: EPS 1.000000e-05, n = 200000000
+Elapsed time (sec.): 1.616540
+

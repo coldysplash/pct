@@ -1,0 +1,24 @@
+p = 1
+Numerical integration by Monte Carlo method: n = 10000000
+Result: 0.149978878332, n 10000000
+Elapsed time (sec.): 0.139495
+p = 2
+Numerical integration by Monte Carlo method: n = 10000000
+Result: 0.150010107869, n 10000000
+Elapsed time (sec.): 0.069183
+p = 3
+Numerical integration by Monte Carlo method: n = 10000000
+Result: 0.149997512097, n 10000000
+Elapsed time (sec.): 0.047797
+p = 4
+Numerical integration by Monte Carlo method: n = 10000000
+Result: 0.150022585348, n 10000000
+Elapsed time (sec.): 0.035055
+p = 5
+Numerical integration by Monte Carlo method: n = 10000000
+Result: 0.150020168043, n 10000000
+Elapsed time (sec.): 0.028437
+p = 6
+Numerical integration by Monte Carlo method: n = 10000000
+Result: 0.150006324810, n 10000000
+Elapsed time (sec.): 0.025492

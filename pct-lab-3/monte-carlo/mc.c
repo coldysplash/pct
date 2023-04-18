@@ -22,7 +22,7 @@ int main(int argc, char** argv)
         return 1;
     int num_thds = atoi(argv[1]);
     double t = omp_get_wtime();
-    const int n = 100000000;
+    const int n = 10000000;
     printf("Numerical integration by Monte Carlo method: n = %d\n", n);
     int in = 0;
     double s = 0;
