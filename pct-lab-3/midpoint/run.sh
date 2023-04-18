@@ -1,7 +1,7 @@
 #!/bin/bash
 
-for ((p=2; p <= 8; p = $[ $p+2 ]))
+for ((p=1; p <= 5; p = $[ $p+2 ]))
 do
 echo "p = $p"
-./midpoint $p
+./midpoint.out $p
 done

@@ -1,0 +1,20 @@
+p = 1
+Numerical integration: [-1.000000, 1.000000], n0 = 100000000, EPS = 0.000010
+Result f(x): 1.499714002489; Runge rule: EPS 1.000000e-05, n = 200000000
+Elapsed time (sec.): 6.566889
+p = 2
+Numerical integration: [-1.000000, 1.000000], n0 = 100000000, EPS = 0.000010
+Result f(x): 1.499714002488; Runge rule: EPS 1.000000e-05, n = 200000000
+Elapsed time (sec.): 3.531235
+p = 4
+Numerical integration: [-1.000000, 1.000000], n0 = 100000000, EPS = 0.000010
+Result f(x): 1.499714002489; Runge rule: EPS 1.000000e-05, n = 200000000
+Elapsed time (sec.): 2.003735
+p = 6
+Numerical integration: [-1.000000, 1.000000], n0 = 100000000, EPS = 0.000010
+Result f(x): 1.499714002489; Runge rule: EPS 1.000000e-05, n = 200000000
+Elapsed time (sec.): 1.354740
+p = 8
+Numerical integration: [-1.000000, 1.000000], n0 = 100000000, EPS = 0.000010
+Result f(x): 1.499714002489; Runge rule: EPS 1.000000e-05, n = 200000000
+Elapsed time (sec.): 1.365794
