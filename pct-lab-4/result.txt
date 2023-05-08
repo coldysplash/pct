@@ -1,0 +1,88 @@
+Serial:
+# NBody (n=25)
+# Elapsed time (sec): ttotal 1.721372, tinit 0.000003, tforces 1.677357, tmove 0.038797
+
+ompv1:
+p = 2
+# NBody (n=25)
+# Elapsed time (sec): ttotal 1.775855, tinit 0.000003, tforces 1.731722, tmove 0.038892
+p = 3
+# NBody (n=25)
+# Elapsed time (sec): ttotal 2.037363, tinit 0.000003, tforces 1.993105, tmove 0.039020
+p = 4
+# NBody (n=25)
+# Elapsed time (sec): ttotal 2.647871, tinit 0.000003, tforces 2.602232, tmove 0.040381
+p = 5
+# NBody (n=25)
+# Elapsed time (sec): ttotal 2.934560, tinit 0.000002, tforces 2.890133, tmove 0.039173
+p = 6
+# NBody (n=25)
+# Elapsed time (sec): ttotal 3.549381, tinit 0.000003, tforces 3.496455, tmove 0.047618
+
+ompv2:
+p = 2
+# NBody (n=25)
+# Elapsed time (sec): ttotal 1.064277, tinit 0.000002, tforces 0.000000, tmove 0.000000
+p = 3
+# NBody (n=25)
+# Elapsed time (sec): ttotal 0.935866, tinit 0.000003, tforces 0.000000, tmove 0.000000
+p = 4
+# NBody (n=25)
+# Elapsed time (sec): ttotal 0.962537, tinit 0.000003, tforces 0.000000, tmove 0.000000
+p = 5
+# NBody (n=25)
+# Elapsed time (sec): ttotal 0.971965, tinit 0.000002, tforces 0.000000, tmove 0.000000
+p = 6
+# NBody (n=25)
+# Elapsed time (sec): ttotal 0.987687, tinit 0.000002, tforces 0.000000, tmove 0.000000
+
+ompv3:
+p = 2
+# NBody (n=25)
+# Elapsed time (sec): ttotal 1.347447, tinit 0.000002, tforces 0.000000, tmove 0.000000
+p = 3
+# NBody (n=25)
+# Elapsed time (sec): ttotal 1.520100, tinit 0.000003, tforces 0.000000, tmove 0.000000
+p = 4
+# NBody (n=25)
+# Elapsed time (sec): ttotal 1.462205, tinit 0.000003, tforces 0.000000, tmove 0.000000
+p = 5
+# NBody (n=25)
+# Elapsed time (sec): ttotal 1.489631, tinit 0.000002, tforces 0.000000, tmove 0.000000
+p = 6
+# NBody (n=25)
+# Elapsed time (sec): ttotal 1.524731, tinit 0.000003, tforces 0.000000, tmove 0.000000
+
+ompv4:
+p = 2
+# NBody (n=25)
+# Elapsed time (sec): ttotal 1.714805, tinit 0.000002, tforces 0.000000, tmove 0.000000
+p = 3
+# NBody (n=25)
+# Elapsed time (sec): ttotal 1.608535, tinit 0.000003, tforces 0.000000, tmove 0.000000
+p = 4
+# NBody (n=25)
+# Elapsed time (sec): ttotal 0.969244, tinit 0.000003, tforces 0.000000, tmove 0.000000
+p = 5
+# NBody (n=25)
+# Elapsed time (sec): ttotal 0.876549, tinit 0.000003, tforces 0.000000, tmove 0.000000
+p = 6
+# NBody (n=25)
+# Elapsed time (sec): ttotal 0.889972, tinit 0.000002, tforces 0.000000, tmove 0.000000
+
+ompv5:
+p = 2
+# NBody (n=25)
+# Elapsed time (sec): ttotal 1.042082, tinit 0.000004, tforces 0.000000, tmove 0.000000
+p = 3
+# NBody (n=25)
+# Elapsed time (sec): ttotal 0.761875, tinit 0.000004, tforces 0.000000, tmove 0.000000
+p = 4
+# NBody (n=25)
+# Elapsed time (sec): ttotal 0.655661, tinit 0.000004, tforces 0.000000, tmove 0.000000
+p = 5
+# NBody (n=25)
+# Elapsed time (sec): ttotal 0.597432, tinit 0.000004, tforces 0.000000, tmove 0.000000
+p = 6
+# NBody (n=25)
+# Elapsed time (sec): ttotal 0.571123, tinit 0.000003, tforces 0.000000, tmove 0.000000
