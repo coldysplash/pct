@@ -50,7 +50,7 @@ def draw(filenames, labels, title, filename):
             first_iteration = False
         else:
             lbl = ""
-        ax.bar(thrd_cur + p_offset, thrd_cur, label = lbl, color = "blue", width = wdh);
+        ax.bar(thrd_cur + p_offset, thrd_cur, label = lbl, color = "black", width = wdh);
         thrd_cur += thrd_step
     
     # p_offset += wdh * 0.5

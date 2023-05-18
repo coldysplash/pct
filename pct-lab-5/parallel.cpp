@@ -73,9 +73,6 @@ int main(int argc, char** argv)
     }
     t = omp_get_wtime() - t;
     std::cout << "Time: " << std::fixed << std::setprecision(9) << t << '\n';
-    // for (const auto& i : v)
-    //     std::cout << i << ' ';
-    // std::cout << '\n';
 
     return 0;
 }
