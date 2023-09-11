@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 
 for ((n=15000; n <= 40000; n = $[ $n+5000 ]))
 do
