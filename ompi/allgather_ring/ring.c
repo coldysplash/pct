@@ -39,22 +39,29 @@ int main(int argc, char **argv)
 
     t = MPI_Wtime() - t;
 
-    bool testpassed = true;
+    int testpassed = 1;
     for (size_t i = 0; i < size; i++)
     {
         if (*buf + i * count != 'a' + i * count)
         {
-            testpassed = false;
+            testpassed = 0;
             break;
         }
     }
-    if (testpassed)
+    int alldone = 1;
+    MPI_Reduce(&testpassed, &alldone, 1, MPI_INT, MPI_LAND, 0, MPI_COMM_WORLD);
+
+    if (rank == 0)
     {
-        printf("Message passing successfully!");
-    }
-    else
-    {
-        printf("Error!");
+
+        if (alldone == 1)
+        {
+            printf("Message passing successfully!\n");
+        }
+        else
+        {
+            printf("Error!");
+        }
     }
 
     printf(" Result buf  [ ");

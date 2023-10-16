@@ -43,9 +43,9 @@ int main(int argc, char **argv)
         memset(sbuf, 'a' + rank, count);
     }
 
-    // double t = MPI_Wtime();
+    double t = MPI_Wtime();
     gather(sbuf, rbuf, count, root, commsize, rank);
-    // t = MPI_Wtime() - t;
+    t = MPI_Wtime() - t;
 
     if (rank == root)
     {
@@ -66,7 +66,7 @@ int main(int argc, char **argv)
         {
             printf("Error!");
         }
-        // printf("Time = %f\n", t);
+        printf("Time = %f\n", t);
         printf("Root buf [ ");
         for (size_t i = 0; i < commsize * count; i++)
         {

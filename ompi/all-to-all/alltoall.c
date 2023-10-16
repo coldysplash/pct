@@ -42,32 +42,37 @@ int main(int argc, char **argv)
     all_to_all(sbuf, rbuf, count, commsize, rank);
     t = MPI_Wtime() - t;
 
-    printf("%f\n[", t);
-    for (size_t i = 0; i < commsize * count; i++)
-    {
-        printf("%c ", rbuf[i]);
-    }
-    printf("]\n");
+    // printf("%f\n[", t);
+    // for (size_t i = 0; i < commsize * count; i++)
+    // {
+    //     printf("%c ", rbuf[i]);
+    // }
+    // printf("]\n");
 
-    bool testpassed = true;
+    int testpassed = 1;
     for (size_t i = 0; i < commsize; i++)
     {
         if (*rbuf + i * count != 'a' + i * count)
         {
-            testpassed = false;
+            testpassed = 0;
             break;
         }
     }
-    if (testpassed)
-    {
-        printf("Message passing successfully!\n");
-    }
-    else
-    {
-        printf("Error!");
-    }
+    int alldone = 1;
+    MPI_Reduce(&testpassed, &alldone, 1, MPI_INT, MPI_LAND, 0, MPI_COMM_WORLD);
 
-    // printf("[%d] %s\n", rank, sbuf);
+    if (rank == 0)
+    {
+
+        if (alldone == 1)
+        {
+            printf("Message passing successfully!\n");
+        }
+        else
+        {
+            printf("Error!");
+        }
+    }
 
     free(sbuf);
     free(rbuf);
