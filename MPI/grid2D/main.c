@@ -9,6 +9,7 @@
 #define NELEMS(x) (sizeof((x)) / sizeof((x)[0]))
 #define IND(i, j) ((i) * (nx + 2) + (j))
 
+// определяем размеры подматрциы
 int get_block_size(int n, int rank, int nprocs)
 {
     int s = n / nprocs;
@@ -29,6 +30,7 @@ int main(int argc, char *argv[])
     double ttotal = -MPI_Wtime();
     MPI_Comm_size(MPI_COMM_WORLD, &commsize);
     MPI_Comm_rank(MPI_COMM_WORLD, &rank);
+
     // Create 2D grid of processes: commsize = px * py
     MPI_Comm cartcomm;
     int dims[2] = {0, 0}, periodic[2] = {0, 0};
@@ -43,6 +45,7 @@ int main(int argc, char *argv[])
                 commsize, px, py);
         MPI_Abort(MPI_COMM_WORLD, EXIT_FAILURE);
     }
+
     MPI_Cart_create(MPI_COMM_WORLD, 2, dims, periodic, 0, &cartcomm);
     int coords[2];
     MPI_Cart_coords(cartcomm, rank, 2, coords);
@@ -78,6 +81,7 @@ int main(int argc, char *argv[])
         rows = args[0];
         cols = args[1];
     }
+
     // Allocate memory for local 2D subgrids with halo cells [0..ny + 1][0..nx +
     // 1]
     int ny = get_block_size(rows, ranky, py);
@@ -112,18 +116,22 @@ int main(int argc, char *argv[])
             local_newgrid[ind] = local_grid[ind] = sin(PI * x) * exp(-PI);
         }
     }
+
     // Neighbours
     int left, right, top, bottom;
     MPI_Cart_shift(cartcomm, 0, 1, &left, &right);
     MPI_Cart_shift(cartcomm, 1, 1, &top, &bottom);
+
     // Left and right borders type
     MPI_Datatype col;
     MPI_Type_vector(ny, 1, nx + 2, MPI_DOUBLE, &col);
     MPI_Type_commit(&col);
+
     // Top and bottom borders type
     MPI_Datatype row;
     MPI_Type_contiguous(nx, MPI_DOUBLE, &row);
     MPI_Type_commit(&row);
+
     MPI_Request reqs[8];
     double thalo = 0;
     double treduce = 0;
@@ -185,6 +193,7 @@ int main(int argc, char *argv[])
         MPI_Waitall(8, reqs, MPI_STATUS_IGNORE);
         thalo += MPI_Wtime();
     } // iterations
+
     MPI_Type_free(&row);
     MPI_Type_free(&col);
     free(local_newgrid);
