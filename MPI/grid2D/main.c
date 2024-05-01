@@ -9,7 +9,6 @@
 #define NELEMS(x) (sizeof((x)) / sizeof((x)[0]))
 #define IND(i, j) ((i) * (nx + 2) + (j))
 
-// определяем размеры подматрциы
 int get_block_size(int n, int rank, int nprocs)
 {
     int s = n / nprocs;
@@ -17,6 +16,7 @@ int get_block_size(int n, int rank, int nprocs)
         s++;
     return s;
 }
+
 int get_sum_of_prev_blocks(int n, int rank, int nprocs)
 {
     int rem = n % nprocs;
